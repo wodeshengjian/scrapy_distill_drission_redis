@@ -1,0 +1,17 @@
+redis:
+  host: localhost
+  port: 6379
+  db: 0
+
+crawler:
+  concurrent_requests: 16
+  download_delay: 2
+  retry_times: 3
+
+proxy:
+  rotate_interval: 10
+  validate_url: http://httpbin.org/ip
+
+logging:
+  level: INFO
+  file: logs/spider.log
